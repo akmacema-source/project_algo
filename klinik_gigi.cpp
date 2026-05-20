@@ -64,3 +64,8 @@ dataTindakan daftarTindakan[] = {
     {"Gigi Kropos",         300000},
 };
 int totalTindakan = 6;
+
+int listKosong()
+{
+    return (awal == NULL) ? 1 : 0;
+}

@@ -134,3 +134,11 @@ void input()
                 bantu = bantu->kanan;
             }
         } while (adanik == 0);
+
+        cin.ignore();
+        cout << " Masukkan Keluhan       : ";
+        cin.getline(kry.keluhan, sizeof(kry.keluhan));
+        strcpy(NB->keluhan, kry.keluhan);
+ 
+        tampilTindakan();
+        do

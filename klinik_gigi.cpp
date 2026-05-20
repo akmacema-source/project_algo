@@ -83,3 +83,19 @@ int getBiayaTindakan(char tindakan[50])
             return daftarTindakan[i].biaya;
     return 0;
 }
+
+void cekJadwalDokter()
+{
+    cout << "\n==========================================" << endl;
+    cout << "       JADWAL PRAKTEK KLINIK GIGI         " << endl;
+    cout << "==========================================" << endl;
+    cout << "  Dokter  : drg. Rahma Aulia, Sp.KG       " << endl;
+    cout << "  Senin   : 09.00 - 13.00                 " << endl;
+    cout << "  Selasa  : 09.00 - 13.00                 " << endl;
+    cout << "  Rabu    : 14.00 - 18.00                 " << endl;
+    cout << "  Kamis   : 09.00 - 13.00                 " << endl;
+    cout << "  Jumat   : 14.00 - 18.00                 " << endl;
+    cout << "  Sabtu   : 09.00 - 14.00                 " << endl;
+    cout << "  Minggu  : Libur                         " << endl;
+    cout << "==========================================" << endl;
+}

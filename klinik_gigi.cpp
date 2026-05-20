@@ -16,3 +16,9 @@ struct pasien
     pasien *kanan;
     pasien *kiri;
 };
+
+struct pegawai
+{
+    string username;
+    string password;
+};

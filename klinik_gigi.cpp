@@ -53,3 +53,14 @@ int dataBaru   = 0;
 int adanik     = 0;
 int adajabatan = 0;
  
+struct dataTindakan { const char *nama; int biaya; };
+ 
+dataTindakan daftarTindakan[] = {
+    {"Pembersihan Karang",  150000},
+    {"Pemasangan Kawat",   3000000},
+    {"Pemutihan Gigi",      500000},
+    {"Tambal Gigi",         200000},
+    {"Cabut Gigi",          250000},
+    {"Gigi Kropos",         300000},
+};
+int totalTindakan = 6;

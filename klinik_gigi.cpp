@@ -65,7 +65,14 @@ dataTindakan daftarTindakan[] = {
 };
 int totalTindakan = 6;
 
-int listKosong()
+void tampilTindakan()
 {
-    return (awal == NULL) ? 1 : 0;
+    cout << "\n==========================================" << endl;
+    cout << "       DAFTAR TINDAKAN & BIAYA            " << endl;
+    cout << "==========================================" << endl;
+    for (int i = 0; i < totalTindakan; i++)
+        cout << "  " << (i+1) << ". " << daftarTindakan[i].nama
+             << " - Rp " << daftarTindakan[i].biaya << endl;
+    cout << "==========================================" << endl;
 }
+ 

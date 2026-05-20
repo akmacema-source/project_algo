@@ -76,3 +76,10 @@ void tampilTindakan()
     cout << "==========================================" << endl;
 }
  
+int getBiayaTindakan(char tindakan[50])
+{
+    for (int i = 0; i < totalTindakan; i++)
+        if (strcasecmp(daftarTindakan[i].nama, tindakan) == 0)
+            return daftarTindakan[i].biaya;
+    return 0;
+}

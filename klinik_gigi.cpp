@@ -22,3 +22,13 @@ struct pegawai
     string username;
     string password;
 };
+
+struct riwayatObat
+{
+    char namaPasien[50];
+    int  NIKPasien;
+    char tindakan[50];
+    char namaObat[100];
+    char tanggal[20];
+    riwayatObat *next;
+};

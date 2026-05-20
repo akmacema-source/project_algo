@@ -142,3 +142,19 @@ void input()
  
         tampilTindakan();
         do
+        {
+            adajabatan = 1;
+            cout << " Masukkan Tindakan      : ";
+            cin.getline(kry.tindakan, sizeof(kry.tindakan));
+            strcpy(NB->tindakan, kry.tindakan);
+ 
+            int cekBiaya = getBiayaTindakan(kry.tindakan);
+            if (cekBiaya == 0)
+            {
+                cout << " Tindakan tidak valid! Pilih dari daftar di atas." << endl;
+                adajabatan = 0;
+            }
+            else
+                NB->biaya = cekBiaya;
+        } while (adajabatan == 0);
+ 

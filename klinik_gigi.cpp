@@ -32,3 +32,9 @@ struct riwayatObat
     char tanggal[20];
     riwayatObat *next;
 };
+
+pegawai akun[3] = {
+    {"dokter",      "drg123"},
+    {"adminklinik", "adm456"},
+    {"asisten",     "ast789"}
+};

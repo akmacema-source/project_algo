@@ -157,4 +157,15 @@ void input()
             else
                 NB->biaya = cekBiaya;
         } while (adajabatan == 0);
+        
+        cout << " Masukkan Tanggal Temu  : ";
+        cin.getline(kry.tanggalTemu, sizeof(kry.tanggalTemu));
+        strcpy(NB->tanggalTemu, kry.tanggalTemu);
+ 
+        cout << " Masukkan Jadwal Jam    : ";
+        cin.getline(kry.jadwalTemu, sizeof(kry.jadwalTemu));
+        strcpy(NB->jadwalTemu, kry.jadwalTemu);
+ 
+        NB->kanan = NULL;
+        NB->kiri  = NULL;
  

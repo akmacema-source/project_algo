@@ -157,7 +157,7 @@ void input()
             else
                 NB->biaya = cekBiaya;
         } while (adajabatan == 0);
-        
+
         cout << " Masukkan Tanggal Temu  : ";
         cin.getline(kry.tanggalTemu, sizeof(kry.tanggalTemu));
         strcpy(NB->tanggalTemu, kry.tanggalTemu);
@@ -169,3 +169,18 @@ void input()
         NB->kanan = NULL;
         NB->kiri  = NULL;
  
+                if (listKosong())
+        {
+            awal  = NB;
+            akhir = NB;
+        }
+        else
+        {
+            akhir->kanan = NB;
+            NB->kiri     = akhir;
+            akhir        = NB;
+        }
+        dataBaru++;
+    }
+    cout << "\n Data pasien berhasil ditambahkan!" << endl;
+}

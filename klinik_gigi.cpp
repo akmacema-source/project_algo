@@ -38,3 +38,18 @@ pegawai akun[3] = {
     {"adminklinik", "adm456"},
     {"asisten",     "ast789"}
 };
+
+pasien     *awal      = NULL;
+pasien     *akhir     = NULL;
+pasien     *bantu;
+pasien     *hapus;
+pasien     *NB;
+pasien     *list;
+pasien     *cek;
+pasien      kry;
+riwayatObat *awalObat = NULL;
+ 
+int dataBaru   = 0;
+int adanik     = 0;
+int adajabatan = 0;
+ 

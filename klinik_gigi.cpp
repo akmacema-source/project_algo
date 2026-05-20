@@ -99,3 +99,21 @@ void cekJadwalDokter()
     cout << "  Minggu  : Libur                         " << endl;
     cout << "==========================================" << endl;
 }
+
+void input()
+{
+    int jumlahInput;
+    cout << "\n Masukkan jumlah data pasien : ";
+    cin  >> jumlahInput;
+ 
+    for (int i = 0; i < jumlahInput; i++)
+    {
+        NB = new pasien;
+        cout << "\n Data ke-" << dataBaru + 1 << endl;
+ 
+        cin.ignore();
+        cout << " Masukkan Nama          : ";
+        cin.getline(kry.nama, sizeof(kry.nama));
+        strcpy(NB->nama, kry.nama);
+ 
+        do

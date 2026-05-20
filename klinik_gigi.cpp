@@ -117,3 +117,20 @@ void input()
         strcpy(NB->nama, kry.nama);
  
         do
+        {
+            adanik = 1;
+            cout << " Masukkan NIK           : ";
+            cin  >> kry.NIK;
+            NB->NIK = kry.NIK;
+            bantu = awal;
+            while (bantu != NULL)
+            {
+                if (kry.NIK == bantu->NIK)
+                {
+                    cout << " NIK tidak boleh sama!" << endl;
+                    adanik = 0;
+                    break;
+                }
+                bantu = bantu->kanan;
+            }
+        } while (adanik == 0);

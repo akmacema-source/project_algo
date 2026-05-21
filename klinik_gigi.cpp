@@ -542,3 +542,41 @@ void rekapPendapatan()
     cout << "  TOTAL PENDAPATAN : Rp " << totalPendapatan << endl;
     cout << "==========================================" << endl;
 }
+void lihatPasienByKeluhan()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+
+    char cariKeluhan[50];
+    cin.ignore();
+    cout << "\n Masukkan keluhan yang dicari : ";
+    cin.getline(cariKeluhan, sizeof(cariKeluhan));
+
+    cek        = awal;
+    int ketemu = 0;
+    cout << endl;
+
+    while (cek != NULL)
+    {
+        if (strcasecmp(cek->keluhan, cariKeluhan) == 0)
+        {
+            ketemu = 1;
+            cout << "==========================================" << endl;
+            cout << "  Nama Pasien  : " << cek->nama        << endl;
+            cout << "  NIK          : " << cek->NIK         << endl;
+            cout << "  Keluhan      : " << cek->keluhan     << endl;
+            cout << "  Tindakan     : " << cek->tindakan    << endl;
+            cout << "  Tanggal Temu : " << cek->tanggalTemu << endl;
+            cout << "  Jam Temu     : " << cek->jadwalTemu  << endl;
+            cout << "  Biaya        : Rp " << cek->biaya    << endl;
+            cout << "==========================================" << endl;
+        }
+        cek = cek->kanan;
+    }
+
+    if (ketemu == 0)
+        cout << "\n Tidak ada pasien dengan keluhan tersebut!" << endl;
+}

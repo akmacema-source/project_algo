@@ -258,3 +258,27 @@ void sorting()
                 strcpy(temp.tanggalTemu, i->tanggalTemu);
                 temp.NIK   = i->NIK;
                 temp.biaya = i->biaya;
+
+                strcpy(i->nama,        j->nama);
+                strcpy(i->keluhan,     j->keluhan);
+                strcpy(i->tindakan,    j->tindakan);
+                strcpy(i->jadwalTemu,  j->jadwalTemu);
+                strcpy(i->tanggalTemu, j->tanggalTemu);
+                i->NIK   = j->NIK;
+                i->biaya = j->biaya;
+
+                strcpy(j->nama,        temp.nama);
+                strcpy(j->keluhan,     temp.keluhan);
+                strcpy(j->tindakan,    temp.tindakan);
+                strcpy(j->jadwalTemu,  temp.jadwalTemu);
+                strcpy(j->tanggalTemu, temp.tanggalTemu);
+                j->NIK   = temp.NIK;
+                j->biaya = temp.biaya;
+            }
+        }
+    }
+    cout << "\n Data berhasil diurutkan!" << endl;
+    output();
+}
+ 
+

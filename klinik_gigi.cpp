@@ -495,7 +495,7 @@ void editData()
         }
         list = list->kanan;
     }
-    
+
     if (ketemu == 0)
         cout << "\n Data tidak ditemukan!" << endl;
 }
@@ -527,3 +527,18 @@ void rekapPendapatan()
         }
         cek = cek->kanan;
     }
+
+    cout << "\n==========================================" << endl;
+    cout << "        REKAP PENDAPATAN KLINIK           " << endl;
+    cout << "==========================================" << endl;
+    for (int i = 0; i < totalTindakan; i++)
+    {
+        if (jumlahTindakan[i] > 0)
+            cout << "  " << daftarTindakan[i].nama
+                 << " (" << jumlahTindakan[i] << " pasien)"
+                 << " : Rp " << rekapTindakan[i] << endl;
+    }
+    cout << "------------------------------------------" << endl;
+    cout << "  TOTAL PENDAPATAN : Rp " << totalPendapatan << endl;
+    cout << "==========================================" << endl;
+}

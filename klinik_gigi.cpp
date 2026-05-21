@@ -411,3 +411,8 @@ void search()
                 awal       = awal->kanan;
                 awal->kiri = NULL;
             }
+             else if (hapus == akhir)
+            {
+                akhir        = akhir->kiri;
+                akhir->kanan = NULL;
+            }

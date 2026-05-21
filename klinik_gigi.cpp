@@ -738,3 +738,6 @@ string login()
         cout << "\n Percobaan login sudah 3 kali. Program keluar!" << endl;
     return "";
 }
+void menuDokter()
+{
+    int pilih;

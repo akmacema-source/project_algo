@@ -406,3 +406,8 @@ void search()
                  awal  = NULL;
                 akhir = NULL;
             }
+            else if (hapus == awal)
+            {
+                awal       = awal->kanan;
+                awal->kiri = NULL;
+            }

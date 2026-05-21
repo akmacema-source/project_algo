@@ -281,4 +281,11 @@ void sorting()
     output();
 }
  
-
+void search()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+ 

@@ -421,3 +421,11 @@ void search()
                 hapus->kiri->kanan = hapus->kanan;
                 hapus->kanan->kiri = hapus->kiri;
             }
+            delete hapus;
+            dataBaru--;
+            cout << "\n Data pasien berhasil dihapus!" << endl;
+            break;
+        }
+        hapus = hapus->kanan;
+    }
+ 

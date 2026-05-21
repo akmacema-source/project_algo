@@ -782,3 +782,4 @@ void menuAdmin()
         cout << "10. Keluar"                      << endl;
         cout << "=========================="      << endl;
         cout << "Masukkan Menu : ";
+        cin  >> pilih;

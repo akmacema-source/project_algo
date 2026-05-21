@@ -681,3 +681,7 @@ void lihatRiwayatObat()
         cout << "\n Belum ada riwayat pemberian obat!" << endl;
         return;
     }
+
+cout << "\n==========================================" << endl;
+    cout << "      RIWAYAT PEMBERIAN OBAT PASIEN       " << endl;
+    cout << "==========================================" << endl;

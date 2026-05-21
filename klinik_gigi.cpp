@@ -839,3 +839,8 @@ int main()
     while (jalankan)
     {
         string role = login();
+        if      (role == "dokter")      menuDokter();
+        else if (role == "adminklinik") menuAdmin();
+        else if (role == "asisten")     menuAsisten();
+        else break;
+        

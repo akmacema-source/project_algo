@@ -706,3 +706,10 @@ string login()
 {
     string inputUser, inputPass;
     int    percobaan = 0;
+
+    cout << "================================================" << endl;
+    cout << "         KLINIK GIGI drg. RAHMA AULIA           " << endl;
+    cout << "        Jl. Dental No. 12, Yogyakarta           " << endl;
+    cout << "================================================" << endl;
+    cout << "   Silakan login untuk masuk ke sistem          " << endl;
+    cout << "================================================" << endl;

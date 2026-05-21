@@ -336,4 +336,19 @@ void search()
          {
             if (strcasecmp(cek->nama, cariNama) == 0)
             {
+                ketemu = 1;
+                cout << "\n Data ditemukan!" << endl;
+                cout << "==========================================" << endl;
+                cout << "  Nama Pasien  : " << cek->nama        << endl;
+                cout << "  NIK          : " << cek->NIK         << endl;
+                cout << "  Keluhan      : " << cek->keluhan     << endl;
+                cout << "  Tindakan     : " << cek->tindakan    << endl;
+                cout << "  Tanggal Temu : " << cek->tanggalTemu << endl;
+                cout << "  Jam Temu     : " << cek->jadwalTemu  << endl;
+                cout << "  Biaya        : Rp " << cek->biaya    << endl;
+                cout << "==========================================" << endl;
+            }
+            cek = cek->kanan;
+        }
+    }
  

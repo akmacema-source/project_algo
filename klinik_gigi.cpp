@@ -832,3 +832,5 @@ void menuAsisten()
 
 int main()
 {
+    awal  = NULL;
+    akhir = NULL;

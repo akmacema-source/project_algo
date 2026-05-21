@@ -673,3 +673,11 @@ void catatObat()
 
     cout << "\n Data pemberian obat berhasil dicatat!" << endl;
 }
+
+void lihatRiwayatObat()
+{
+    if (awalObat == NULL)
+    {
+        cout << "\n Belum ada riwayat pemberian obat!" << endl;
+        return;
+    }

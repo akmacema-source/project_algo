@@ -850,3 +850,5 @@ int main()
         cout << "  2. Keluar program"               << endl;
         cout << "================================"  << endl;
         cout << "  Pilihan : ";
+        cin  >> pilihAksi;
+        

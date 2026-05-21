@@ -325,5 +325,12 @@ void search()
             cek = cek->kanan;
         }
     }
-    
+    else if (pil == 2)
+    {
+        char cariNama[50];
+        cin.ignore();
+        cout << " Masukkan Nama : ";
+        cin.getline(cariNama, sizeof(cariNama));
+        cek = awal;
+        while (cek != NULL)
  

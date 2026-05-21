@@ -461,4 +461,37 @@ void editData()
             cout << " Keluhan baru     (lama: " << list->keluhan     << ") : ";
             cin.getline(kry.keluhan, sizeof(kry.keluhan));
             if (strlen(kry.keluhan) > 0) strcpy(list->keluhan, kry.keluhan);
-            
+ tampilTindakan();
+            do
+            {
+                adajabatan = 1;
+                cout << " Tindakan baru    (lama: " << list->tindakan << ") : ";
+                cin.getline(kry.tindakan, sizeof(kry.tindakan));
+                if (strlen(kry.tindakan) == 0) break;
+
+                int cekBiaya = getBiayaTindakan(kry.tindakan);
+                if (cekBiaya == 0)
+                {
+                    cout << " Tindakan tidak valid!" << endl;
+                    adajabatan = 0;
+                }
+                else
+                {
+                    strcpy(list->tindakan, kry.tindakan);
+                    list->biaya = cekBiaya;
+                }
+            } while (adajabatan == 0);
+
+            cout << " Tanggal Temu baru (lama: " << list->tanggalTemu << ") : ";
+            cin.getline(kry.tanggalTemu, sizeof(kry.tanggalTemu));
+            if (strlen(kry.tanggalTemu) > 0) strcpy(list->tanggalTemu, kry.tanggalTemu);
+
+            cout << " Jam Temu baru    (lama: " << list->jadwalTemu  << ") : ";
+            cin.getline(kry.jadwalTemu, sizeof(kry.jadwalTemu));
+            if (strlen(kry.jadwalTemu) > 0) strcpy(list->jadwalTemu, kry.jadwalTemu);
+
+            cout << "\n Data berhasil diperbarui!" << endl;
+            break;
+        }
+        list = list->kanan;
+    }

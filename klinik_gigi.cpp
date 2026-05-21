@@ -843,4 +843,5 @@ int main()
         else if (role == "adminklinik") menuAdmin();
         else if (role == "asisten")     menuAsisten();
         else break;
-        
+
+        int pilihAksi;

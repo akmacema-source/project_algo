@@ -184,3 +184,11 @@ void input()
     }
     cout << "\n Data pasien berhasil ditambahkan!" << endl;
 }
+
+void output()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }

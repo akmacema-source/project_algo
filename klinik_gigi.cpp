@@ -218,3 +218,13 @@ void output()
     cout << " Total Pendapatan  : Rp " << totalPendapatan<< endl;
     cout << "==========================================" << endl;
 }
+
+void sorting()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+
+    

@@ -729,3 +729,8 @@ string login()
                 return inputUser;
             }
         }
+
+        percobaan++;
+        if (percobaan < 3)
+            cout << " Username atau password salah! Sisa percobaan: " << (3 - percobaan) << endl;
+    }

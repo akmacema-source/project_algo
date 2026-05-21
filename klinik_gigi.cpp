@@ -754,3 +754,9 @@ void menuDokter()
         cin  >> pilih;
 
         switch (pilih)
+        {
+            case 1: lihatPasienByKeluhan(); break;
+            case 2: cekJadwalDokter();      break;
+            case 3: cout << "\n Sampai jumpa, Dokter!" << endl; break;
+            default: cout << "\n Pilihan tidak valid!" << endl;
+        }

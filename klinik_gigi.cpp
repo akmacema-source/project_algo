@@ -845,3 +845,8 @@ int main()
         else break;
 
         int pilihAksi;
+        cout << "\n================================" << endl;
+        cout << "  1. Login dengan akun lain"      << endl;
+        cout << "  2. Keluar program"               << endl;
+        cout << "================================"  << endl;
+        cout << "  Pilihan : ";

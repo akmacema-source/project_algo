@@ -351,4 +351,13 @@ void search()
             cek = cek->kanan;
         }
     }
- 
+    else if (pil == 3)
+    {
+        char cariTindakan[50];
+        cin.ignore();
+        cout << " Masukkan Tindakan : ";
+        cin.getline(cariTindakan, sizeof(cariTindakan));
+        cek = awal;
+        cout << endl;
+        while (cek != NULL)
+        

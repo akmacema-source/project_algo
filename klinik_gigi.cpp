@@ -701,3 +701,8 @@ cout << "\n==========================================" << endl;
         no++;
     }
 }
+
+string login()
+{
+    string inputUser, inputPass;
+    int    percobaan = 0;

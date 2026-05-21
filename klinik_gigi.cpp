@@ -239,3 +239,13 @@ void sorting()
     int pil;
     cin  >> pil;
  
+    for (i = awal; i != NULL; i = i->kanan)
+    {
+        for (j = i->kanan; j != NULL; j = j->kanan)
+        {
+            bool tukar = false;
+            if      (pil == 1 && i->NIK > j->NIK)                     tukar = true;
+            else if (pil == 2 && strcmp(i->nama, j->nama) > 0)         tukar = true;
+            else if (pil == 3 && strcmp(i->tindakan, j->tindakan) > 0) tukar = true;
+            else if (pil == 4 && i->biaya > j->biaya)                  tukar = true;
+ 

@@ -685,7 +685,19 @@ void lihatRiwayatObat()
 cout << "\n==========================================" << endl;
     cout << "      RIWAYAT PEMBERIAN OBAT PASIEN       " << endl;
     cout << "==========================================" << endl;
-    
+
  riwayatObat *tmp = awalObat;
     int no           = 1;
     while (tmp != NULL)
+
+    {
+        cout << " No-" << no << endl;
+        cout << "  Pasien   : " << tmp->namaPasien << " (NIK: " << tmp->NIKPasien << ")" << endl;
+        cout << "  Tindakan : " << tmp->tindakan   << endl;
+        cout << "  Obat     : " << tmp->namaObat   << endl;
+        cout << "  Tanggal  : " << tmp->tanggal    << endl;
+        cout << "------------------------------------------" << endl;
+        tmp = tmp->next;
+        no++;
+    }
+}

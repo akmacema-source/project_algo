@@ -685,3 +685,7 @@ void lihatRiwayatObat()
 cout << "\n==========================================" << endl;
     cout << "      RIWAYAT PEMBERIAN OBAT PASIEN       " << endl;
     cout << "==========================================" << endl;
+    
+ riwayatObat *tmp = awalObat;
+    int no           = 1;
+    while (tmp != NULL)

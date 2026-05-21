@@ -306,4 +306,8 @@ void search()
         cin  >> cariNIK;
         cek = awal;
         while (cek != NULL)
+         {
+            if (cek->NIK == cariNIK)
+            {
+                
  

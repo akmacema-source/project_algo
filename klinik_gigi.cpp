@@ -798,3 +798,5 @@ void menuAdmin()
             case 10: cout << "\n Sampai jumpa!" << endl; break;
             default: cout << "\n Pilihan tidak valid!" << endl;
         }
+    } while (pilih != 10);
+}

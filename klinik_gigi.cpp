@@ -395,3 +395,14 @@ void search()
 
     hapus      = awal;
     int ketemu = 0;
+
+     while (hapus != NULL)
+    {
+        if (hapus->NIK == delNIK)
+        {
+            ketemu = 1;
+            if (hapus == awal && hapus == akhir)
+            {
+                 awal  = NULL;
+                akhir = NULL;
+            }

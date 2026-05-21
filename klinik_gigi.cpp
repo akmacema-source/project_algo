@@ -834,3 +834,5 @@ int main()
 {
     awal  = NULL;
     akhir = NULL;
+
+    bool jalankan = true;

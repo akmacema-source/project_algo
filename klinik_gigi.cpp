@@ -817,3 +817,6 @@ void menuAsisten()
         cout << "=========================="      << endl;
         cout << "Masukkan Menu : ";
         cin  >> pilih;
+
+        switch (pilih)
+        {

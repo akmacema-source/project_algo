@@ -851,4 +851,13 @@ int main()
         cout << "================================"  << endl;
         cout << "  Pilihan : ";
         cin  >> pilihAksi;
-        
+                
+    if (pilihAksi != 1)
+        {
+            cout << "\n Sampai jumpa! Terima kasih." << endl;
+            jalankan = false;
+        }
+    }
+
+    return 0;
+}

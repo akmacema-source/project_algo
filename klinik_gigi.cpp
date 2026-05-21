@@ -227,4 +227,15 @@ void sorting()
         return;
     }
 
-    
+        pasien *i, *j;
+    pasien  temp;
+ 
+    cout << "\n Sorting berdasarkan:" << endl;
+    cout << " 1. NIK (Ascending)"    << endl;
+    cout << " 2. Nama (Ascending)"   << endl;
+    cout << " 3. Tindakan"           << endl;
+    cout << " 4. Biaya (Ascending)"  << endl;
+    cout << " Pilihan : ";
+    int pil;
+    cin  >> pil;
+ 

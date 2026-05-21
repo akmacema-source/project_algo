@@ -299,4 +299,11 @@ void search()
  
     int ketemu = 0;
  
+    if (pil == 1)
+    {
+        int cariNIK;
+        cout << " Masukkan NIK : ";
+        cin  >> cariNIK;
+        cek = awal;
+        while (cek != NULL)
  

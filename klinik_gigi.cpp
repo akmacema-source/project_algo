@@ -760,3 +760,5 @@ void menuDokter()
             case 3: cout << "\n Sampai jumpa, Dokter!" << endl; break;
             default: cout << "\n Pilihan tidak valid!" << endl;
         }
+            } while (pilih != 3);
+}

@@ -428,4 +428,7 @@ void search()
         }
         hapus = hapus->kanan;
     }
- 
+     if (ketemu == 0)
+        cout << "\n Data tidak ditemukan!" << endl;
+}
+

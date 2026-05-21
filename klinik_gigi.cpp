@@ -288,4 +288,15 @@ void search()
         cout << "\n Belum ada data pasien!" << endl;
         return;
     }
+
+     cout << "\n Cari berdasarkan:" << endl;
+    cout << " 1. NIK"             << endl;
+    cout << " 2. Nama Pasien"     << endl;
+    cout << " 3. Tindakan"        << endl;
+    cout << " Pilihan : ";
+    int pil;
+    cin  >> pil;
+ 
+    int ketemu = 0;
+ 
  

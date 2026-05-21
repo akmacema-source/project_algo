@@ -392,3 +392,6 @@ void search()
     int delNIK;
     cout << "\n Masukkan NIK pasien yang akan dihapus : ";
     cin  >> delNIK;
+
+    hapus      = awal;
+    int ketemu = 0;

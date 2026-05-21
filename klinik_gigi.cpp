@@ -764,3 +764,6 @@ void menuDokter()
 }
 void menuAdmin()
 {
+    int pilih;
+    do
+    {

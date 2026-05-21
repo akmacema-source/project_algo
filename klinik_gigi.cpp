@@ -802,3 +802,7 @@ void menuAdmin()
 }
 
 void menuAsisten()
+{
+    int pilih;
+    do
+    {

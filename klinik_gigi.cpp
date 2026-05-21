@@ -442,3 +442,7 @@ void editData()
     int editNIK;
     cout << "\n Masukkan NIK pasien yang akan diedit : ";
     cin  >> editNIK;
+
+    list       = awal;
+    int ketemu = 0;
+ 

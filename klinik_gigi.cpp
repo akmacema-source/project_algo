@@ -720,3 +720,12 @@ string login()
         cin  >> inputUser;
         cout << " Password : ";
         cin  >> inputPass;
+
+         for (int i = 0; i < 3; i++)
+        {
+            if (akun[i].username == inputUser && akun[i].password == inputPass)
+            {
+                cout << "\n Login berhasil! Selamat datang, " << inputUser << "!" << endl;
+                return inputUser;
+            }
+        }

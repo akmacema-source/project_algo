@@ -767,3 +767,18 @@ void menuAdmin()
     int pilih;
     do
     {
+        cout << "\n=========================="    << endl;
+        cout << "    MENU  ADMINISTRASI    "      << endl;
+        cout << "=========================="      << endl;
+        cout << "1.  Input Pasien"                << endl;
+        cout << "2.  Output Pasien"               << endl;
+        cout << "3.  Sorting Pasien"              << endl;
+        cout << "4.  Search Pasien"               << endl;
+        cout << "5.  Delete Pasien"               << endl;
+        cout << "6.  Edit Pasien"                 << endl;
+        cout << "7.  Daftar Tindakan & Biaya"     << endl;
+        cout << "8.  Rekap Pendapatan"            << endl;
+        cout << "9.  Cek Jadwal Praktek"          << endl;
+        cout << "10. Keluar"                      << endl;
+        cout << "=========================="      << endl;
+        cout << "Masukkan Menu : ";

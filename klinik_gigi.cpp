@@ -388,3 +388,7 @@ void search()
         cout << "\n Belum ada data pasien!" << endl;
         return;
     }
+
+    int delNIK;
+    cout << "\n Masukkan NIK pasien yang akan dihapus : ";
+    cin  >> delNIK;

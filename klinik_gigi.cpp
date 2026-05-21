@@ -734,3 +734,7 @@ string login()
         if (percobaan < 3)
             cout << " Username atau password salah! Sisa percobaan: " << (3 - percobaan) << endl;
     }
+
+        cout << "\n Percobaan login sudah 3 kali. Program keluar!" << endl;
+    return "";
+}

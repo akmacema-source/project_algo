@@ -377,3 +377,7 @@ void search()
             cek = cek->kanan;
         }
     }
+    if (ketemu == 0)
+        cout << "\n Data tidak ditemukan!" << endl;
+}
+ 

@@ -713,3 +713,10 @@ string login()
     cout << "================================================" << endl;
     cout << "   Silakan login untuk masuk ke sistem          " << endl;
     cout << "================================================" << endl;
+
+     while (percobaan < 3)
+    {
+        cout << "\n Username : ";
+        cin  >> inputUser;
+        cout << " Password : ";
+        cin  >> inputPass;

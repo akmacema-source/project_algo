@@ -333,4 +333,7 @@ void search()
         cin.getline(cariNama, sizeof(cariNama));
         cek = awal;
         while (cek != NULL)
+         {
+            if (strcasecmp(cek->nama, cariNama) == 0)
+            {
  

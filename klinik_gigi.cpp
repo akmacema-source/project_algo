@@ -762,3 +762,5 @@ void menuDokter()
         }
             } while (pilih != 3);
 }
+void menuAdmin()
+{

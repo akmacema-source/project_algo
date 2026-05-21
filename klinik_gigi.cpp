@@ -820,3 +820,10 @@ void menuAsisten()
 
         switch (pilih)
         {
+            case 1: lihatPasienByKeluhan(); break;
+            case 2: catatObat();            break;
+            case 3: lihatRiwayatObat();     break;
+            case 4: cekJadwalDokter();      break;
+            case 5: cout << "\n Sampai jumpa!" << endl; break;
+            default: cout << "\n Pilihan tidak valid!" << endl;
+        }

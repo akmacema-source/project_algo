@@ -439,3 +439,6 @@ void editData()
         return;
     }
  
+    int editNIK;
+    cout << "\n Masukkan NIK pasien yang akan diedit : ";
+    cin  >> editNIK;

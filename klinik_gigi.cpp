@@ -829,3 +829,6 @@ void menuAsisten()
         }
     } while (pilih != 5);
 }
+
+int main()
+{

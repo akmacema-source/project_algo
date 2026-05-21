@@ -741,3 +741,14 @@ string login()
 void menuDokter()
 {
     int pilih;
+    do
+    {
+        cout << "\n========================" << endl;
+        cout << "      MENU  DOKTER      " << endl;
+        cout << "========================" << endl;
+        cout << "1. Lihat Pasien by Keluhan" << endl;
+        cout << "2. Cek Jadwal Praktek"      << endl;
+        cout << "3. Keluar"                  << endl;
+        cout << "========================"   << endl;
+        cout << "Masukkan Menu : ";
+        cin  >> pilih;

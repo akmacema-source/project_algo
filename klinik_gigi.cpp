@@ -827,3 +827,5 @@ void menuAsisten()
             case 5: cout << "\n Sampai jumpa!" << endl; break;
             default: cout << "\n Pilihan tidak valid!" << endl;
         }
+    } while (pilih != 5);
+}

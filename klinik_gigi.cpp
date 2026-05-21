@@ -495,3 +495,35 @@ void editData()
         }
         list = list->kanan;
     }
+    
+    if (ketemu == 0)
+        cout << "\n Data tidak ditemukan!" << endl;
+}
+
+void rekapPendapatan()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+
+    int totalPendapatan = 0;
+    int rekapTindakan[10] = {0};
+    int jumlahTindakan[10] = {0};
+
+    cek = awal;
+    while (cek != NULL)
+    {
+        for (int i = 0; i < totalTindakan; i++)
+        {
+            if (strcasecmp(cek->tindakan, daftarTindakan[i].nama) == 0)
+            {
+                rekapTindakan[i]  += cek->biaya;
+                jumlahTindakan[i] += 1;
+                totalPendapatan   += cek->biaya;
+                break;
+            }
+        }
+        cek = cek->kanan;
+    }

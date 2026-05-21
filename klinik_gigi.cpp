@@ -806,3 +806,13 @@ void menuAsisten()
     int pilih;
     do
     {
+        cout << "\n=========================="    << endl;
+        cout << "     MENU  ASISTEN        "      << endl;
+        cout << "=========================="      << endl;
+        cout << "1. Lihat Pasien by Keluhan"      << endl;
+        cout << "2. Catat Pemberian Obat"          << endl;
+        cout << "3. Lihat Riwayat Pemberian Obat"  << endl;
+        cout << "4. Cek Jadwal Praktek"            << endl;
+        cout << "5. Keluar"                        << endl;
+        cout << "=========================="      << endl;
+        cout << "Masukkan Menu : ";

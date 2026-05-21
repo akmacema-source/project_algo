@@ -431,4 +431,11 @@ void search()
      if (ketemu == 0)
         cout << "\n Data tidak ditemukan!" << endl;
 }
-
+void editData()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+ 

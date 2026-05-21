@@ -446,3 +446,4 @@ void editData()
     list       = awal;
     int ketemu = 0;
  
+    

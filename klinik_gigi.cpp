@@ -249,3 +249,12 @@ void sorting()
             else if (pil == 3 && strcmp(i->tindakan, j->tindakan) > 0) tukar = true;
             else if (pil == 4 && i->biaya > j->biaya)                  tukar = true;
  
+            if (tukar)
+            {
+                strcpy(temp.nama,        i->nama);
+                strcpy(temp.keluhan,     i->keluhan);
+                strcpy(temp.tindakan,    i->tindakan);
+                strcpy(temp.jadwalTemu,  i->jadwalTemu);
+                strcpy(temp.tanggalTemu, i->tanggalTemu);
+                temp.NIK   = i->NIK;
+                temp.biaya = i->biaya;

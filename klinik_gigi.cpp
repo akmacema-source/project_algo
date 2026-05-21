@@ -192,3 +192,11 @@ void output()
         cout << "\n Belum ada data pasien!" << endl;
         return;
     }
+    bantu  = awal;
+    int no = 1;
+    int totalPendapatan = 0;
+ 
+    cout << "\n==========================================" << endl;
+    cout << "       DATA PASIEN KLINIK GIGI            " << endl;
+    cout << "==========================================" << endl;
+ 

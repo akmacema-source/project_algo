@@ -580,3 +580,96 @@ void lihatPasienByKeluhan()
     if (ketemu == 0)
         cout << "\n Tidak ada pasien dengan keluhan tersebut!" << endl;
 }
+void catatObat()
+{
+    if (listKosong())
+    {
+        cout << "\n Belum ada data pasien!" << endl;
+        return;
+    }
+
+    cout << "\n==========================================" << endl;
+    cout << "         DAFTAR PASIEN TERDAFTAR          " << endl;
+    cout << "==========================================" << endl;
+    cek    = awal;
+    int no = 1;
+    while (cek != NULL)
+    {
+        cout << "  " << no << ". " << cek->nama
+             << " (NIK: " << cek->NIK
+             << ") - " << cek->tindakan << endl;
+        cek = cek->kanan;
+        no++;
+    }
+    cout << "==========================================" << endl;
+    cout << " Masukkan NIK pasien : ";
+    int cariNIK;
+    cin  >> cariNIK;
+
+    cek           = awal;
+    pasien *target = NULL;
+    while (cek != NULL)
+    {
+        if (cek->NIK == cariNIK) { target = cek; break; }
+        cek = cek->kanan;
+    }
+
+    if (target == NULL)
+    {
+        cout << "\n Pasien tidak ditemukan!" << endl;
+        return;
+    }
+
+    cout << "\n Pasien   : " << target->nama     << endl;
+    cout << " Tindakan : " << target->tindakan  << endl;
+
+    cout << "\n--- Rekomendasi Obat ---" << endl;
+    if (strcasecmp(target->tindakan, "Cabut Gigi") == 0 ||
+        strcasecmp(target->tindakan, "Gigi Kropos") == 0)
+    {
+        cout << "  1. Asam Mefenamat" << endl;
+        cout << "  2. Amoxicillin"    << endl;
+    }
+    else if (strcasecmp(target->tindakan, "Tambal Gigi") == 0)
+    {
+        cout << "  1. Asam Mefenamat" << endl;
+        cout << "  2. Paracetamol"    << endl;
+    }
+    else if (strcasecmp(target->tindakan, "Pemasangan Kawat") == 0)
+    {
+        cout << "  1. Asam Mefenamat" << endl;
+    }
+    else if (strcasecmp(target->tindakan, "Pembersihan Karang") == 0)
+    {
+        cout << "  1. Obat Kumur Klorheksidin" << endl;
+    }
+    else if (strcasecmp(target->tindakan, "Pemutihan Gigi") == 0)
+    {
+        cout << "  1. Gel Desensitasi" << endl;
+    }
+
+    riwayatObat *newObat = new riwayatObat();
+    strcpy(newObat->namaPasien, target->nama);
+    newObat->NIKPasien = target->NIK;
+    strcpy(newObat->tindakan, target->tindakan);
+
+    cin.ignore();
+    cout << "\n Masukkan obat yang diberikan (pisah koma jika >1) : ";
+    cin.getline(newObat->namaObat, sizeof(newObat->namaObat));
+
+    cout << " Tanggal pemberian (cth: 16-05-2026) : ";
+    cin.getline(newObat->tanggal, sizeof(newObat->tanggal));
+
+    newObat->next = NULL;
+
+    if (awalObat == NULL)
+        awalObat = newObat;
+    else
+    {
+        riwayatObat *tmp = awalObat;
+        while (tmp->next != NULL) tmp = tmp->next;
+        tmp->next = newObat;
+    }
+
+    cout << "\n Data pemberian obat berhasil dicatat!" << endl;
+}

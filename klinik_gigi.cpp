@@ -199,4 +199,22 @@ void output()
     cout << "\n==========================================" << endl;
     cout << "       DATA PASIEN KLINIK GIGI            " << endl;
     cout << "==========================================" << endl;
- 
+ while (bantu != NULL)
+    {
+        cout << " Data ke-" << no << endl;
+        cout << "  Nama Pasien  : " << bantu->nama       << endl;
+        cout << "  NIK          : " << bantu->NIK        << endl;
+        cout << "  Keluhan      : " << bantu->keluhan    << endl;
+        cout << "  Tindakan     : " << bantu->tindakan   << endl;
+        cout << "  Tanggal Temu : " << bantu->tanggalTemu<< endl;
+        cout << "  Jam Temu     : " << bantu->jadwalTemu << endl;
+        cout << "  Biaya        : Rp " << bantu->biaya   << endl;
+        cout << "------------------------------------------" << endl;
+        totalPendapatan += bantu->biaya;
+        bantu = bantu->kanan;
+        no++;
+    }
+    cout << " Total Pasien      : " << dataBaru          << endl;
+    cout << " Total Pendapatan  : Rp " << totalPendapatan<< endl;
+    cout << "==========================================" << endl;
+}

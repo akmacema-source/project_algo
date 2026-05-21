@@ -836,3 +836,5 @@ int main()
     akhir = NULL;
 
     bool jalankan = true;
+    while (jalankan)
+    {

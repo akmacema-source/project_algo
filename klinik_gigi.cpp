@@ -446,4 +446,19 @@ void editData()
     list       = awal;
     int ketemu = 0;
  
-    
+     while (list != NULL)
+    {
+        if (list->NIK == editNIK)
+        {
+            ketemu = 1;
+            cout << "\n Data ditemukan! Kosongkan jika tidak ingin mengubah." << endl;
+            cin.ignore();
+
+            cout << " Nama baru        (lama: " << list->nama        << ") : ";
+            cin.getline(kry.nama, sizeof(kry.nama));
+            if (strlen(kry.nama) > 0) strcpy(list->nama, kry.nama);
+
+            cout << " Keluhan baru     (lama: " << list->keluhan     << ") : ";
+            cin.getline(kry.keluhan, sizeof(kry.keluhan));
+            if (strlen(kry.keluhan) > 0) strcpy(list->keluhan, kry.keluhan);
+            

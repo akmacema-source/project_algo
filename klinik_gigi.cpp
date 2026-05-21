@@ -838,3 +838,4 @@ int main()
     bool jalankan = true;
     while (jalankan)
     {
+        string role = login();

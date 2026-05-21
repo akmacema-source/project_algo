@@ -800,3 +800,5 @@ void menuAdmin()
         }
     } while (pilih != 10);
 }
+
+void menuAsisten()

@@ -786,3 +786,15 @@ void menuAdmin()
 
         switch (pilih)
         {
+            case 1:  input();           break;
+            case 2:  output();          break;
+            case 3:  sorting();         break;
+            case 4:  search();          break;
+            case 5:  deleteData();      break;
+            case 6:  editData();        break;
+            case 7:  tampilTindakan();  break;
+            case 8:  rekapPendapatan(); break;
+            case 9:  cekJadwalDokter(); break;
+            case 10: cout << "\n Sampai jumpa!" << endl; break;
+            default: cout << "\n Pilihan tidak valid!" << endl;
+        }

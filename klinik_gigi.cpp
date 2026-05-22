@@ -11,7 +11,7 @@ struct pasien
     char tindakan[50];
     char jadwalTemu[30];
     char tanggalTemu[20];
-    int  NIK;
+    long long NIK;
     int  biaya;
     pasien *kanan;
     pasien *kiri;
@@ -26,7 +26,7 @@ struct pegawai
 struct riwayatObat
 {
     char namaPasien[50];
-    int  NIKPasien;
+    long long NIKPasien;
     char tindakan[50];
     char namaObat[100];
     char tanggal[20];
@@ -120,8 +120,7 @@ void input()
         cout << " Masukkan Nama          : ";
         cin.getline(kry.nama, sizeof(kry.nama));
         strcpy(NB->nama, kry.nama);
- 
-        do
+ do
         {
             adanik = 1;
             cout << " Masukkan NIK           : ";
@@ -140,11 +139,11 @@ void input()
             }
         } while (adanik == 0);
 
-        cin.ignore();
+        cin.ignore(1000, '\n');
         cout << " Masukkan Keluhan       : ";
         cin.getline(kry.keluhan, sizeof(kry.keluhan));
         strcpy(NB->keluhan, kry.keluhan);
- 
+
         tampilTindakan();
         do
         {
@@ -152,7 +151,7 @@ void input()
             cout << " Masukkan Tindakan      : ";
             cin.getline(kry.tindakan, sizeof(kry.tindakan));
             strcpy(NB->tindakan, kry.tindakan);
- 
+
             int cekBiaya = getBiayaTindakan(kry.tindakan);
             if (cekBiaya == 0)
             {
@@ -306,7 +305,7 @@ void search()
  
     if (pil == 1)
     {
-        int cariNIK;
+        long long cariNIK;
         cout << " Masukkan NIK : ";
         cin  >> cariNIK;
         cek = awal;
@@ -394,7 +393,7 @@ void search()
         return;
     }
 
-    int delNIK;
+    long long delNIK;
     cout << "\n Masukkan NIK pasien yang akan dihapus : ";
     cin  >> delNIK;
 
@@ -444,10 +443,10 @@ void editData()
         return;
     }
  
-    int editNIK;
+    long long editNIK;
     cout << "\n Masukkan NIK pasien yang akan diedit : ";
     cin  >> editNIK;
-
+    
     list       = awal;
     int ketemu = 0;
  
@@ -608,7 +607,7 @@ void catatObat()
     }
     cout << "==========================================" << endl;
     cout << " Masukkan NIK pasien : ";
-    int cariNIK;
+    long long cariNIK;
     cin  >> cariNIK;
 
     cek           = awal;

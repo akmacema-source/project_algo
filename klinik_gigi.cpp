@@ -83,6 +83,10 @@ void tampilTindakan()
  
 int getBiayaTindakan(char tindakan[50])
 {
+    int len = strlen(tindakan);
+    while (len > 0 && (tindakan[len-1] == '\r' || tindakan[len-1] == '\n' || tindakan[len-1] == ' '))
+        tindakan[--len] = '\0';
+
     for (int i = 0; i < totalTindakan; i++)
         if (strcasecmp(daftarTindakan[i].nama, tindakan) == 0)
             return daftarTindakan[i].biaya;

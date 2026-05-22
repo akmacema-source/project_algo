@@ -65,6 +65,11 @@ dataTindakan daftarTindakan[] = {
 };
 int totalTindakan = 6;
 
+int listKosong()
+{
+    return (awal == NULL) ? 1 : 0;
+}
+
 void tampilTindakan()
 {
     cout << "\n==========================================" << endl;
